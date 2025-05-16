@@ -1,0 +1,86 @@
+/* App.css */
+
+.app {
+    min-height: 100vh;
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Arial, sans-serif;
+  }
+  
+.app.light {
+    background-color: #ffffff;
+    color: #222222;
+  }
+  
+.app.dark {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .btn-toggle {
+    background-color: #3b82f6; /* синий */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-toggle:hover {
+    background-color: #2563eb;
+  }
+  .todo-form input {
+  padding: 0.5rem;
+  width: 70%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+}
+
+.todo-form button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-form button:hover {
+  background-color: #2563eb;
+}
+
+.todo-list {
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
